@@ -33,6 +33,6 @@ def set_temp(id, value):
 
 @cbpi.initalizer()
 def init(cbpi):
-    print "INITIALIZE HTTP SENSOR MODULE"
+    print("INITIALIZE HTTP SENSOR MODULE")
     cbpi.app.register_blueprint(blueprint, url_prefix='/api/httpsensor')
-    print "READY"
+    print("READY")
